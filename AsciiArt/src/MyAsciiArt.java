@@ -9,17 +9,17 @@ public class MyAsciiArt {
 		System.out.println("        #####     #####     ");
 		System.out.println("       #####     #####      ");
 	    System.out.println(" ###########################");
-	     System.out.println("###########################");
-         System.out.println("###########################");
+	    System.out.println("########################### ");
+        System.out.println("########################### ");
 		System.out.println("    #####     #####         ");
 		System.out.println("   #####     #####          ");
 	    System.out.println("  #####     #####           ");
-     System.out.println("#############################  ");
-     System.out.println("#############################  "); 
-     System.out.println("###########################    ");
-      System.out.println("#####     #####               ");
-     System.out.println("#####     #####                ");
-    System.out.println("#####     #####                 ");
+        System.out.println("#############################");
+        System.out.println("#############################"); 
+        System.out.println("###########################  ");
+        System.out.println("#####     #####               ");
+       System.out.println("#####     #####                ");
+      System.out.println("#####     #####                 ");
 		
 	}
 

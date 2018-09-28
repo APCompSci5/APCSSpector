@@ -1,0 +1,12 @@
+
+public class Lab0380Point {
+	public static void main(String args[]){
+		System.out.println("TextLab03, 80 Point Version\n");
+		int x = 10000;
+		System.out.println("Starting seconds:" + x);
+		
+		
+		
+	}
+
+}
