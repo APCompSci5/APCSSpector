@@ -1,0 +1,27 @@
+package ch4;
+import java.awt.*;
+import java.applet.*; 
+
+public class Lab0480PointVersion extends Applet {
+
+	public void paint(Graphics g) {
+		// TODO Auto-generated method stub
+		g.drawLine( 100,200,400,200);
+		g.drawLine(400, 200,400,500);
+		g.drawLine(400, 500, 100,500);
+		g.drawLine(100, 500, 100,200);
+		g.drawLine(200,300,500,300);
+		g.drawLine(500, 300,500,0);
+		g.drawLine(500,0,200,0);
+		g.drawLine(200, 0,200,300);
+		
+		
+		
+		
+		
+
+	}
+
+
+	}
+

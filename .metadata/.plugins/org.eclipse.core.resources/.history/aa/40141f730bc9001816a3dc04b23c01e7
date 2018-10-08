@@ -1,0 +1,11 @@
+package ch4;
+import
+
+public class Lab0480PointVersion {
+
+	public void paint(Graphics g) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
