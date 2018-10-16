@@ -1,0 +1,18 @@
+package ch5;
+import java.awt.*;
+import java.applet.*;
+
+
+public class GraphicsLab02st extends Applet{
+	public void paint(Graphics g)
+	{
+		int width = 1000;
+		int height = 680;
+		g.drawRect(100,100,width,height);
+	}
+}
+
+		
+	
+		
+			
