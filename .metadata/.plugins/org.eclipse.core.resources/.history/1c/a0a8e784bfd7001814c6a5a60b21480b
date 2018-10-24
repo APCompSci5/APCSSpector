@@ -15,8 +15,8 @@ public class Arrays {
         
          
         
-        	 displayArray(reverse(numArray));
-        	 System.out.println("found index is " +findIndex(numArray,3));
+        	 System.out.print(reverse(numArray));
+        	 System.out.print(findIndex(numArray,3));
        // System.out.println("the position of the index of 3",2);
          
          

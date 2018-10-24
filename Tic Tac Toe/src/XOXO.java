@@ -1,13 +1,13 @@
 
 public class XOXO {
 	
-	int[] board = new int[9]; 
+ char[] board = new char[9]; 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+     Printboard();
 	}
-	//create a method that prints the board.
+	//1.create a method that prints the board.
 	/*
 	 1| 2|3
 	-----
@@ -17,15 +17,17 @@ public class XOXO {
 	 
 	
 	 */
-
-public static int Printboard(){
-	System.out.println("1| 2| 3");
+//2. user input for X's and O's. And you want to print your board after each user input.
+	//3.checkWinner90 method. 
+public static void Printboard(){
+	System.out.println("  | | ");
 	System.out.println("-------");
-	System.out.println("4| 5| 6");
+	System.out.println("  |  | ");
 	System.out.println("-------");
-	System.out.println("7| 8| 9");
+	System.out.println("  | |  ");
 	
+
 }
-return Printboard;
+
 
 }

@@ -15,8 +15,8 @@ public class Arrays {
         
          
         
-        	 displayArray(reverse(numArray));
-        	 System.out.println("found index is " +findIndex(numArray,3));
+        	 System.out.print(reverse(numArray));
+        	 System.out.print(findIndex(numArray,3));
        // System.out.println("the position of the index of 3",2);
          
          
@@ -89,7 +89,7 @@ public class Arrays {
   
    
     //Challenge:Write a Java program to remove a specific element and return the array without any elements
-    /*public static int[] removeArray(int[] oldArray, int num){
+    public static int[] removeArray(int[] oldArray, int num){
     	int[] newArray = new Int[oldArray.length-1];
     	for(int k=0; k< oldArray; k++){
     		//check to see if the item in the old array
@@ -97,7 +97,7 @@ public class Arrays {
     	}
     	return newArray;
     }
-  */  
+    
 }
 
 

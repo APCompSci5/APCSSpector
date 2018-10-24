@@ -14,25 +14,12 @@ public class Arrays {
          
         
          
-        
-        	 displayArray(reverse(numArray));
-        	 System.out.println("found index is " +findIndex(numArray,3));
-       // System.out.println("the position of the index of 3",2);
+         for(int i=0; i<numArray.length;i++){
+        	 System.out.print(reverse(numArray));
+         }
          
          
 	}
-	 //Write a Java program to find the index of an array element
-    public static int findIndex(int my_array[], int t){
-    	if(my_array == null) return -1;
-    	int len= my_array.length;
-    	int i=0;
-    	while(i<len){
-    		if(my_array[i]== t) return i;
-    	else i=i+1;
-    	}
-    	return -1; 
-    	
-    }
 	//Write a Java program to test if an array contains a specific value 
     
 	public static boolean does6Exist(int[] testArray){
@@ -86,18 +73,13 @@ public class Arrays {
     
   
     
-  
-   
-    //Challenge:Write a Java program to remove a specific element and return the array without any elements
-    /*public static int[] removeArray(int[] oldArray, int num){
-    	int[] newArray = new Int[oldArray.length-1];
-    	for(int k=0; k< oldArray; k++){
-    		//check to see if the item in the old array
-    		//if its not, then you want to copy over the item into the newArray
-    	}
-    	return newArray;
+   //Write a Java program to find the index of an array element
+    public static void findIndex(int array[]){
+    	
     }
-  */  
+    
+    //Challenge:Write a Java program to remove a specific element and return the array without any elements
+    
 }
 
 
