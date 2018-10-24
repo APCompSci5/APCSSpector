@@ -20,8 +20,10 @@ public class LoopingChallenge {
 		int current = 1;
 		int last = 0;
 		for(int i=1; i<= 20; i++){
-			System.out.println(current);
+			System.out.println("\n" + last);
+			int fib = last + current; 
 			last = current; 
+			current=fib;
 		}
 			
 		}
