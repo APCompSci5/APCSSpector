@@ -1,0 +1,23 @@
+
+public class Q1 {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+        System.out.println(sum);
+        		
+        }
+	
+public static int Multiples(){
+	 for(int i=1; i<=1000;i++){
+     int sum=0;
+     	if(i%3==0 || i%5==0)
+     		sum++;
+
+
+}
+	 return sum ;
+}
+}
+

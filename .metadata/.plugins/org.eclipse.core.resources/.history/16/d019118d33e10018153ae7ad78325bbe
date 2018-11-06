@@ -1,0 +1,19 @@
+package ch12;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+boolean ans = isEven(10);
+System.out.println(ans);
+	}
+public static boolean isEven(int num){
+	boolean even = false;
+	
+	if(num % 2 ==0)
+		even = true;
+	else 
+		even = false;
+	return even;
+}
+}
