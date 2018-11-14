@@ -1,0 +1,34 @@
+
+public class Difference {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+
+		pair7
+		
+	}
+	public bigdiff(int[] nums){
+		for(int i=0; i<nums.length;i++){
+			nums[i]= Math.max(nums[0],nums[1],nums[2],nums[3])-Math.min(nums[0],nums[1],nums[2],nums[3]);
+			System.out.println(nums[i]);
+	}
+		return;
+		  
+			
+		  }
+	public boolean pair7(int[] nums) {
+		  for (int i=0; i<(nums.length-1); i++) {
+		    if (nums[i]==7 && nums[i+1]==7) 
+		    	return true;
+		    if(nums[i]==7 && nums[i+2]==7)
+		    	return true;
+		  }
+		  return false;  
+		}
+			
+	
+	
+		
+	}
+		 

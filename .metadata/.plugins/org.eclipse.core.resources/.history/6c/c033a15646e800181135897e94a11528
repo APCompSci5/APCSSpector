@@ -1,0 +1,11 @@
+
+public class Student extends Person{ // I'm a person object that will inherit all the properties of a Person
+
+	int id;
+	double gpa;
+	
+	public Student(){
+		id =00000;
+		gpa=0.0;
+	}
+}

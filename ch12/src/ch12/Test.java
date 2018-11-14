@@ -5,12 +5,12 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	/*	boolean ans = isEven(10);
+		boolean ans = isEven(10);
 		System.out.println(" 10 is even:" + ans);
 		
 		ans = isEven(7);
 		System.out.println(ans);
-		*/
+	
 		fizzBuzz();
 		while(true){
 		Scanner in = new Scanner(System.in);

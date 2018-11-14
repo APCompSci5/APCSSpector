@@ -1,0 +1,50 @@
+
+public class Difference {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stubs
+		
+	}
+	public int bigDiff(int[] nums){
+		nums=new int[4];
+		int small=0;
+		int large=0;
+		int difference=0;
+		for(int i=0; i<nums.length;i++){
+			int a= Math.min(nums[0],nums[1]);
+			int b= Math.min(nums[2],nums[3]);
+			small=Math.min(a, b);
+			int c= Math.max(nums[0], nums[1]);
+			int d=Math.max(nums[2],nums[3]);
+			large=Math.max(c,d);
+			difference=large-small;
+			
+	}
+		return difference;
+		  
+			
+		  }
+	public boolean pair7(int[] nums) {
+		  for (int i=0; i<(nums.length-1); i++) {
+		    if (nums[i]==7 && nums[i+1]==7) 
+		    	return true;
+		    if(nums[i]==7 && nums[i+2]==7)
+		    	return true;
+		  }
+		  return false;  
+		}
+	public int notAlone(int[] nums, int val) {
+		for(int i=0;i<nums.length;i++){
+			if(nums[i]==val)
+				nums[i+1]=nums[i];
+			
+				
+				
+		}
+		  return val;
+	}	
+	
+	
+		
+	}
+		 

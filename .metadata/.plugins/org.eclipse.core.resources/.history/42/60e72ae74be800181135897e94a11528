@@ -1,0 +1,16 @@
+
+public class TestPumpkin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		Pumpkin small = new Pumpkin(5);
+		System.out.println(small.weight + " " + small.pricePerPound);
+		Pumpkin medium = new Pumpkin(10);
+		System.out.println(medium.weight);
+		Pumpkin large = new Pumpkin(15);
+		System.out.println(large.weight);
+		
+}
+}
