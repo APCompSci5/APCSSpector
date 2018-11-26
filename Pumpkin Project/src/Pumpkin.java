@@ -1,13 +1,15 @@
 
 public class Pumpkin {
-	double weight;
-	double pricePerPound = 3.00;
+	private double weight;
+	private double pricePerPound=.25;
+	private double growth = .5;
 	
 	public  Pumpkin(double pounds){
 		weight = pounds;
 		
 	}
    public void setWeight(double w){
+	   if(w < 100)
 	   weight = w;
 }
   public double getWeight(){
@@ -15,9 +17,20 @@ public class Pumpkin {
 	
 }
    public void grow(){
-	   weight= weight + pricePerPound*weight;
-	   
-	   
-}
+    	weight=(weight * growth) + weight;
+    	
+    }
+	  
    
+ 
+	   
+   
+   
+     public double Price(){
+    	 double amount = 0;
+	   amount =weight * pricePerPound;
+	   return amount;
+   }
+    
+  
 }
