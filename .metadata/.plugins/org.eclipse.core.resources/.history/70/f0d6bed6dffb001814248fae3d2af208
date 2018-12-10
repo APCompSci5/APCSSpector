@@ -1,0 +1,19 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+class Smoke extends TrainCar{
+	private int x;
+	public Smoke(Graphics g, int x2) {
+		super(g,x2);
+		x= x2;
+		
+		drawBalloons(g);
+		
+	
+	}
+	public void drawBalloons(Graphics g) {
+		g.drawOval(x+5,140,50,50);
+		
+	}
+	
+}

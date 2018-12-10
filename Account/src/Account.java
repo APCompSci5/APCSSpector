@@ -1,9 +1,9 @@
 
 public class Account {
-	private double balance=100;
+	protected double balance;
 
 	public Account(double dollars){
-		dollars = balance;
+		balance = dollars;
 	}
 	public double getBalance(){
 		return balance;
@@ -16,4 +16,7 @@ public class Account {
 	}
 	
 
+	    
+	
 }
+

@@ -1,0 +1,24 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+class Smoke extends TrainCar{
+	private int x;
+	public Smoke(Graphics g,Color cc, int x2) {
+		super(g,cc ,x2);
+		x= x2;
+		drawSmoke(g);
+		drawTime(g);
+		
+	
+	}
+	public void drawTime(Graphics g) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void drawSmoke(Graphics g) {
+		g.setColor(Color.gray);
+		g.drawOval(x+100, 200, 50, 50);
+		g.fillOval(x+100, 200, 50, 50);
+		
+	}
+}
