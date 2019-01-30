@@ -1,24 +1,21 @@
 
 public class Q2 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-System.out.print(evenfib());
+		System.out.println(new Q2().fib());
 	}
-	public static int evenfib(){
-		int last=0;
-		int current=1; 
-		int fib=0;
-		int sum=0;
-		for(int i=1; i<4000000; i++){
-			last=current;
-		     current=fib;
-		    fib=last+current;
-		if(i % 2==0)
-			sum= sum+i;
-			
+
+	public String fib() {
+		int sum = 0;
+		int x = 1;  // Represents the current Fibonacci number being processed
+		int y = 2;  // Represents the next Fibonacci number in the sequence
+		while (x <= 4000000) {
+			if (x % 2 == 0)
+				sum += x;
+			int z = x + y;
+			x = y;
+			y = z;
 		}
-		return sum;
+		return Integer.toString(sum);
 	}
+	
 }

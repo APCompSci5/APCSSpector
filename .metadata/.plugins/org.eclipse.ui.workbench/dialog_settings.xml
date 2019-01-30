@@ -27,6 +27,7 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/supremestudier/Documents/GitHub/APCSRogoszinski/Outfits/src"/>
 			<item value="/Users/supremestudier/Documents/LearnAPCS(A)/APCS-TeachingUnits/APCS-09-Inheritance and Composition/Programs09"/>
 			<item value="/Users/supremestudier/Documents/LearnAPCS(A)/APCS-TeachingUnits/APCS-08-Creating Object Methods/Programs08"/>
 			<item value="/Users/supremestudier/Documents/LearnAPCS(A)/APCS-TeachingUnits/APCS-12-Static 1D &amp; 2D Arrays/Programs12"/>
