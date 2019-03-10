@@ -1,0 +1,130 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class GUI implements ActionListener{
+	//Item(double dollars,int quantity,String type, String Color,String Petals, String Geom)
+	// add all attributes 
+	JFrame myFrame = new JFrame(); 
+	JPanel myPanel = new JPanel(); 
+	private JLabel Cash;
+	private JLabel Fabric;
+	private JLabel Magnitude;
+	private JLabel Color;
+	private JLabel Flower;
+	private JLabel Geom;
+	private JTextField Dough;
+	private JTextField Material;
+	private JTextField Surface;
+	private JTextField Paint;
+	private JTextField Petals;
+	private JTextField Shape;
+	private JTextField Information;
+	private JLabel Product;
+	private JButton Save;
+	private JButton Add;
+	private JButton Search;
+	private Inventory stock = new Inventory();
+	
+	
+	
+
+
+//3 buttons + textfield 
+public GUI(){
+	
+	stock.readFile();
+	Cash = new JLabel("Price:");
+	Dough = new JTextField(" ");
+	Fabric = new JLabel("Material:");
+	Material = new JTextField(" ");
+	Magnitude = new JLabel("Size:");
+	Surface = new JTextField(" ");
+	Color = new JLabel("Color:");
+	Paint = new JTextField(" ");
+	Flower = new JLabel("Flowers:");
+	Petals = new JTextField(" ");
+	Geom = new JLabel("Shape:");
+	Shape = new JTextField(" ");
+	Add = new JButton("Apply");
+	Save = new JButton("Save");
+	Information = new JTextField("");
+	Product = new JLabel("Information:");
+	Search = new JButton("Search");
+	
+	Save.addActionListener(this);
+	Add.addActionListener(this);
+	Search.addActionListener(this);
+
+	
+	myPanel.setLayout(new GridLayout(2,8));
+	myPanel.add(Save);
+	myPanel.add(Add);
+	myPanel.add(Search);
+	myPanel.add(Cash);
+	myPanel.add(Dough);
+	myPanel.add(Magnitude);
+	myPanel.add(Surface);
+	myPanel.add(Fabric);
+	myPanel.add(Material);
+	myPanel.add(Color);
+	myPanel.add(Paint);
+	myPanel.add(Flower);
+	myPanel.add(Petals);
+	myPanel.add(Geom);
+	myPanel.add(Shape);
+	myPanel.add(Product);
+	myPanel.add(Information);
+	
+	myFrame.add(myPanel);
+	myFrame.setTitle("Urn Project");
+	myFrame.setSize(40, 40);
+	myFrame.setVisible(true);
+	
+	
+	
+}
+
+public static void main(String args[]){
+	new GUI();
+}
+
+@Override
+public void actionPerformed(ActionEvent e) {
+	String str = e.getActionCommand();
+	if(str.equals("Save")){
+		stock.writeData();
+	}
+	if(str.equals("Apply")){
+		//Item(double dollars,int quantity,String type, String Color,String Petals, String Geom)
+		double d = Double.parseDouble(Dough.getText());
+		int q = Integer.parseInt(Surface.getText());
+		String t = Material.getText();
+		String c = Paint.getText();
+		String f = Petals.getText();
+		String g = Shape.getText();
+		
+		
+		
+		
+		
+		//Item i = new Item(d)
+		//stock.addItem(i);
+	}
+		if(str.equals("Search")){
+		int index =	stock.findIndexByName(Material.getText());
+		stock.getItemName(index);
+		Information.setText(stock.getItemName(index));
+			
+	}
+
+	
+	}
+	// TODO Auto-generated method stub
+	
+}
+
+
+
+

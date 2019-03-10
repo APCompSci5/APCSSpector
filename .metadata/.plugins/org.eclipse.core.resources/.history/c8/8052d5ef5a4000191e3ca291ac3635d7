@@ -1,0 +1,81 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class GUI implements ActionListener{
+	
+	JFrame myFrame = new JFrame(); 
+	JPanel myPanel = new JPanel(); 
+	private JLabel Cash;
+	private JLabel Fabric;
+	private JLabel Magnitude;
+	private JTextField Dough;
+	private JTextField Material;
+	private JTextField Surface;
+	private JTextField Information;
+	private JLabel Product;
+	private JButton Save;
+	private JButton Add;
+	private JButton Remove;
+	private Inventory i = new Inventory();
+	
+	
+	
+
+
+//3 buttons + textfield 
+public GUI(){
+	
+	
+	Cash = new JLabel("Price:");
+	Dough = new JTextField(" ");
+	Fabric = new JLabel("Material:");
+	Material = new JTextField(" ");
+	Magnitude = new JLabel("Size:");
+	Surface = new JTextField(" ");
+	Add = new JButton("Apply");
+	Remove = new JButton("Disregard");
+	Save = new JButton("Save");
+	Information = new JTextField("");
+	Product = new JLabel("Information:");
+	
+	Save.addActionListener(this);
+	Add.addActionListener(this);
+	Remove.addActionListener(this);
+	
+	myPanel.setLayout(new GridLayout(6,6));
+	myPanel.add(Save);
+	myPanel.add(Remove);
+	myPanel.add(Add);
+	myPanel.add(Cash);
+	myPanel.add(Dough);
+	myPanel.add(Fabric);
+	myPanel.add(Material);
+	myPanel.add(Magnitude);
+	myPanel.add(Surface);
+	myPanel.add(Product);
+	myPanel.add(Information);
+	
+	myFrame.add(myPanel);
+	myFrame.setTitle("Urn Project");
+	myFrame.setSize(40, 40);
+	myFrame.setVisible(true);
+	
+	
+	
+}
+
+public static void main(String args[]){
+	new GUI();
+}
+
+@Override
+public void actionPerformed(ActionEvent e) {
+	// TODO Auto-generated method stub
+	
+}
+
+}
+
+

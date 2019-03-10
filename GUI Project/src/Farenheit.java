@@ -42,7 +42,7 @@ public class Farenheit implements ActionListener{
 		if(str.equals("Convert")) {
 			double celsius = Double.parseDouble(cels.getText());
 			double Convert = celsius * (9/5) + 32;
-			F.setText(celsius + "fahrenheit");
+			F.setText(Convert + "fahrenheit");
 		}
 		}
 
